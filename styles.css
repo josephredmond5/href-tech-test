@@ -22,27 +22,36 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 90%;
-    margin-bottom: 10vh;
+    margin-bottom: 2vh; /* Adjust margin between image and .box-between */
 }
 
-/* Image Styles */
 .image-half img {
-    height: 70vh; /* Set the maximum height for the image */
-    width: 145vh;
+    height: 40vh;
+    width: 148vh;
     margin-left: 10px;
-    margin-top: 10px; /* Add margin to the top to move the image down */
+    margin-top: 25vh;
+    margin-bottom: 0; /* Remove margin-bottom */
+    box-shadow: 0 0 10px rgba(179, 151, 125, 0.2);
 }
+
+.box-between {
+    background-color: white;
+    width: 147vh;
+    margin: 0 auto; /* Remove margin to close the gap */
+    margin-left: 20px; /* Adjust the left margin */
+    margin-right: 20px; /* Adjust the right margin */
+    box-shadow: 0 0 10px rgba(179, 151, 125, 0.2);
+    height: 48vh; /* Make the height adjust based on content */
+}
+
 
 /* Form Styles */
 .form-half {
     padding: 20px;
     background-color: rgb(242, 242, 242);
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(179, 151, 125, 0.2);
-    width: 88%;
-    max-width: 90%;
-    margin-top: 20px; /* Adjusted the margin to move the form up */
-    margin-bottom: 20px;
+    width: 143vh;
+    margin-top: 2vh; /* Adjust spacing between .box-between and form */
 }
 
 /* Name and Email Container */
@@ -60,7 +69,7 @@ body {
     border-radius: 5px;
     width: 20%;
     margin: 10px;
-    margin-left: 30vh;
+    margin-left: auto; /* Adjust to center */
     margin-right: auto;
 }
 
@@ -71,7 +80,8 @@ body {
     border-radius: 5px;
     width: 20%;
     margin: 10px;
-    margin-right: 40vh;
+    margin-left: auto; /* Adjust to center */
+    margin-right: auto;
 }
 
 /* Message Input Styles */
@@ -81,8 +91,8 @@ body {
     border-radius: 5px;
     width: 43.4%;
     margin: 10px;
-    margin-left: 30vh;
-    margin-right: 25vh;
+    margin-left: auto; /* Adjust to center */
+    margin-right: auto;
 }
 
 /* Header Styles */
@@ -90,29 +100,28 @@ h2 {
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
     margin: 10px;
-    width: 150vh;
-    margin-left: 30vh;
+    width: auto; /* Remove fixed width */
+    margin-left: auto; /* Adjust to center */
+    margin-right: auto;
 }
 
-/* Intro Div Styles */
 .intro-div {
     width: 100%;
-    height: auto; /* Set height to auto for dynamic content */
-    margin-left: 10px;
-    margin-bottom: 0; /* Remove margin-bottom */
-    color: red;
-    font-size: 9px;
-    display: flex; /* Use flexbox to arrange the paragraphs horizontally */
-    justify-content: space-between; /* Push content to the top and bottom */
-    align-items: flex-end; /* Align content to the bottom */
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adjust margin-bottom to reduce spacing */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Style each paragraph to have some spacing and icons */
 .intro-div p {
-    margin: 0; /* Remove default margin for paragraphs */
+    margin: 10px;
 }
 
 /* Add Font Awesome icons */
 .intro-div i {
-    margin-right: 5px; /* Add spacing between the icon and text */
+    margin-right: 5px;
 }
