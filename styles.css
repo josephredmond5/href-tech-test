@@ -23,11 +23,17 @@ body {
     max-width: 90%;
 }
 
+.image-half {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: flex-start; /* Align the image to the top */
+    margin-top: -1px; /* Adjust the negative margin to overlap the top border of .box-between */
+}
+
 .image-half img {
-    height: 42vh; /* Adjusted height to bring the image down further */
+    height: 45vh; /* Adjusted height to bring the image down further */
     width: 147.5vh;
-    margin-left: 0;
-    margin-top: 3vh; /* Adjust margin at the top to connect with .box-between */
+    margin: 0; /* Remove all margins */
 }
 
 /* Add left and right borders to .box-between */
@@ -38,17 +44,23 @@ body {
     margin-left: 20px; /* Adjust the left margin */
     margin-right: 20px; /* Adjust the right margin */
     box-shadow: 0 0 10px rgba(179, 151, 125, 0.2);
-    height: 35vh; /* Reduce the height to fit more of the image */
+    height: 30vh; /* Reduce the height to fit more of the image */
     border-left: 1px solid black; /* Add a black left border */
     border-right: 1px solid black; /* Add a black right border */
+    margin-top: 0; /* Remove top margin to join with the image */
+    margin-bottom: 0; /* Remove bottom margin to join with the form */
 }
 
 .form-half {
     padding: 20px;
-    background-color: rgb(242, 242, 242);
-    box-shadow: 0 0 10px rgba(179, 151, 125, 0.2);
+    background-color: #ded2c733;
+    box-shadow: 0 0 10px #b3977d33;
     width: 143vh;
+    margin-top: 0; /* Remove top margin to join with .box-between */
+    margin-bottom: 20px; /* Add some bottom margin to create space below the form */
+    height: 25vh; /* Reduce the height of the form */
 }
+
 
 /* Name and Email Container */
 .name-email-container {
@@ -105,7 +117,7 @@ h2 {
     width: 100%;
     height: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0; /* Remove bottom margin */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -120,4 +132,42 @@ h2 {
 /* Add Font Awesome icons */
 .intro-div i {
     margin-right: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ded2c7;
+    padding: 10px 0;
+    text-align: center;
+    width: 149vh; /* Set the width to match the form's width */
+    margin-left: auto; /* Center the footer horizontally */
+    margin-right: auto;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b3977d;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-left: 10px;
+}
+
+.social-icons a {
+    color: #b3977d;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #ff69b4; /* Change color on hover */
 }
