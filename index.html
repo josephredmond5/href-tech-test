@@ -8,25 +8,26 @@
 </head>
 <body>
    <div class="container">
-       <div class="image-half">
-           <img src="./images/href.png" alt="Your Image">
-       </div>
-       <div class="form-half">
-           <h2>Send Us a Message</h2>
-           <form>
-               <div class="form-row">
-                   <label for="Name"></label>
-                   <input type="text" id="firstName" name="firstName" placeholder="Name">
-               </div>
-               <div class="form-row">
-                   <label for="EmailAddress"></label>
-                   <input type="text" id="Email address" name="Email address" placeholder="Email address">
-               </div>
-               <div class="form-row">
-                   <label for="YourMessage"></label>
-                   <textarea id="message" name="message" placeholder="Your message" rows="5"></textarea>
-               </div>
-           </form>
+       <div class="image-and-form">
+           <div class="image-half">
+               <img src="./images/href.png" alt="Your Image">
+           </div>
+           <div class="form-half">
+               <h2>Send Us a Message</h2>
+               <form>
+                <div class="form-row">
+                    <label for="Name"></label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Name" class="name-input">
+                    
+                    <label for="EmailAddress"></label>
+                    <input type="text" id="Email address" name="Email address" placeholder="Email address" class="email-input">
+                 </div>                 
+                   <div class="form-row">
+                       <label for="YourMessage"></label>
+                       <textarea id="message" name="message" placeholder="Your message" rows="5"></textarea>
+                   </div>
+               </form>
+           </div>
        </div>
    </div>
 </body>
