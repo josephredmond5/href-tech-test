@@ -1,74 +1,118 @@
-/* Updated CSS */
+/* Reset some default styles */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Container Styles */
 .container {
     display: flex;
-    flex-direction: column; /* Change to column layout */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    height: 100vh; /* Set container to full viewport height */
+    height: 100vh;
 }
 
-/* Updated CSS */
+/* Image and Form Section */
 .image-and-form {
     display: flex;
-    flex-direction: column; /* Change to column layout */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    max-width: 90%; /* Reduce the maximum width to make it less wide */
-    margin-bottom: 10vh; /* Move the entire section up */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin-bottom: 10vh;
 }
 
+/* Image Styles */
 .image-half img {
-    width: 100%; /* Make the image take up 100% of its container's width */
-    height: 50vh; /* Maintain aspect ratio for the image */
-    max-height: 60vh; /* Adjust the image height as needed */
+    height: 70vh; /* Set the maximum height for the image */
+    width: 145vh;
+    margin-left: 10px;
+    margin-top: 10px; /* Add margin to the top to move the image down */
 }
 
+/* Form Styles */
 .form-half {
-    flex: 1;
     padding: 20px;
-    background-color: rgb(242, 242, 242); /* Light beige color */
+    background-color: rgb(242, 242, 242);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(179, 151, 125, 0.2);
-    width: 90%; /* Reduce the form width as needed */
-    max-width: 90%; /* Set max-width to match the image's width */
-    margin-top: 20px; /* Increase the margin-top to create more space */
+    width: 88%;
+    max-width: 90%;
+    margin-top: 20px; /* Adjusted the margin to move the form up */
+    margin-bottom: 20px;
 }
 
-/* Updated CSS */
+/* Name and Email Container */
 .name-email-container {
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    width: 100%; /* Make the container take up 100% of its parent's width */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.name-input,
+/* Name Input Styles */
+.name-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20%;
+    margin: 10px;
+    margin-left: 30vh;
+    margin-right: auto;
+}
+
+/* Email Input Styles */
 .email-input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 45%; /* Adjust the width as needed */
-    margin: 10px; /* Add margin between Name and Email */
+    width: 20%;
+    margin: 10px;
+    margin-right: 40vh;
 }
 
+/* Message Input Styles */
 #message {
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 90%; /* Make the message input 90% wide */
-    margin-top: 10px; /* Add margin between Name/Email and Message */
+    width: 43.4%;
+    margin: 10px;
+    margin-left: 30vh;
+    margin-right: 25vh;
 }
 
-/* Updated CSS */
+/* Header Styles */
 h2 {
-    font-size: 9px; /* Reduce font size for the h2 element */
-    margin: 10px; /* Remove margin to make it smaller */
-    width: 150vh; /* Set the width to match the image's width */
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    width: 150vh;
+    margin-left: 30vh;
+}
+
+/* Intro Div Styles */
+.intro-div {
+    width: 100%;
+    height: auto; /* Set height to auto for dynamic content */
+    margin-left: 10px;
+    margin-bottom: 0; /* Remove margin-bottom */
+    color: red;
+    font-size: 9px;
+    display: flex; /* Use flexbox to arrange the paragraphs horizontally */
+    justify-content: space-between; /* Push content to the top and bottom */
+    align-items: flex-end; /* Align content to the bottom */
+}
+
+/* Style each paragraph to have some spacing and icons */
+.intro-div p {
+    margin: 0; /* Remove default margin for paragraphs */
+}
+
+/* Add Font Awesome icons */
+.intro-div i {
+    margin-right: 5px; /* Add spacing between the icon and text */
 }
