@@ -174,3 +174,41 @@ footer {
 .social-icons a:hover {
     color: #ff69b4; /* Change color on hover */
 }
+
+.lorem-text {
+    font-family: monospace;
+    font-size: x-large;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 10vh; /* You can adjust the height as needed */
+}
+.icons {
+    display: flex;
+    justify-content: space-between; /* Distribute icons evenly */
+    align-items: center; /* Center vertically */
+    height: 10vh; /* You can adjust the height as needed */
+    width: 95vh;
+    margin-left: 25vh;
+}
+
+/* Style for the icons */
+.phone-icon,
+.envelope-icon,
+.location-icon {
+    font-size: 24px; /* Adjust icon size as needed */
+    margin-right: 5px; /* Margin between icons and text */
+}
+
+/* Style for the text next to icons */
+.phone-text,
+.envelope-text,
+.location-text {
+    font-family: monospace; /* Use monospace font */
+    margin-left: -5px; /* Adjust the negative margin to bring text closer to icons */
+    position: relative; /* Enable relative positioning */
+    top: -3px; /* Adjust vertical positioning if needed */
+}
+.footer-content {
+    text-align: left; /* Align content to the far left */
+}
