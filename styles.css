@@ -210,5 +210,18 @@ footer {
     top: -3px; /* Adjust vertical positioning if needed */
 }
 .footer-content {
-    text-align: left; /* Align content to the far left */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.custom-hr {
+    width: 100px; 
+    margin-left: 60vh; 
+    align-items: center;
+}
+
+
+
+/* CHANGE FOOTER SO THEY ARE LEFT AND RIGHT */
+/* MAKE LINE SMALLER <HR /> */
